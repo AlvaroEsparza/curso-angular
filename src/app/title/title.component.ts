@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
 	templateUrl: 'title.component.html'
 })
 export class TitleComponent{
-
+	public name:string = "Alvaro";
 }
