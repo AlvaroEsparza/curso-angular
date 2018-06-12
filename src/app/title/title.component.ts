@@ -1,9 +1,9 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
 	selector: 'title',
-	template: `<h1>curso por Alvaro</h1>`,
-});
+	templateUrl: 'title.component.html'
+})
 export class TitleComponent{
 
 }
