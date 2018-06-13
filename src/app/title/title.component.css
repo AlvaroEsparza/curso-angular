@@ -27,3 +27,11 @@ button:not(.active){
 .shadow {
  box-shadow: 0px 4px 4x rgba(0,0,0,0,2);
 }
+
+.highlight{
+	background-color: red;
+	border-radius: 4px;
+	padding: 4px;
+	color: white;
+	font-size: 12px;
+}
