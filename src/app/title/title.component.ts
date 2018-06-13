@@ -11,13 +11,17 @@ export class TitleComponent implements OnInit{
 	private _value : string;
 	public edades:number [];
 
+	public isAvailable : boolean = true;
+
 	constructor(){}
 
 	//se ejecuta cuando el componente ha sido inicializado
 	ngOnInit(){
 			this.name= "Alex";
 			this.edad=23;
+			setTimeout(()=> this.isAvailable = false, 3000);
 		}
+
 
 	getEdadNombre() : string{
 		return `${this.name} : ${this.edad}`;

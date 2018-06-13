@@ -2,3 +2,5 @@
 <ng-content select="p"></ng-content>
 {{getEdadNombre()}}
 <ng-content select="div"></ng-content>
+
+<button [disabled]="isAvailable" [class.active]="!isAvailable" name="button">inscribir</button>
