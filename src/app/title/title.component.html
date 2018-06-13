@@ -3,4 +3,8 @@
 {{getEdadNombre()}}
 <ng-content select="div"></ng-content>
 
-<button [disabled]="isAvailable" [class.active]="!isAvailable" name="button">inscribir</button>
+
+<!--<button [disabled]="isAvailable" [ngClass]="'active'" name="button">inscribir</button>-->
+<!--<button [disabled]="isAvailable" [ngClass]="['active', 'shadow']" inscribir</button>-->
+<!--<button [disabled]="isAvailable" [ngClass]="css_classes"name="button">inscribir</button>-->
+<button [disabled]="isAvailable" [ngClass]="{active: isAvailable, shadow : !isAvailable}"name="button">inscribir</button>
